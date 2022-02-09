@@ -21,16 +21,20 @@
         background-color: #004c72;
         border: solid 0 transparent;
         outline: none;
-        box-shadow: 0 .1em rgba(0, 0, 0, .5);
-        padding: .5em;
+        box-shadow: 0 0.1em rgb(0 0 0 / 50%);
+        padding: 0.5em;
         display: block;
-        width: 50%;
+        width: 180px;
+        height: 17px;
         cursor: pointer;
         text-align: center;
+        position: absolute;
+        margin-top: 190px;
+        margin-left: 610px;
     }
 
     .feed {
-        position: relative;
+        position: absolute;
         width: 270px;
         height: 125px;
         background-color: #004c72;
@@ -45,38 +49,48 @@
     <img style="height: 73px; margin-left:170.85px;" src="recursos/imgs/SI_H2.png"> <img
         style="height: 46.8px; width:56.75px;  position: absolute; right: 1px;" src="recursos/imgs/SI_H3.png">
 </div>
-<div class="coluna-esquerda largura-1_3">
-    <img class="animate__animated animate__flipInX"
-        style="height: 219.4px; width: 241.85px; margin-top: 80.65px; margin-left: 35px;" src="recursos/imgs/SI_listras.png">
-</div>
-<div class="coluna-direita largura-2_1" style="width: 480px; height: 500px; margin-top: 80px; margin-right: 60px;">
+<div class="coluna-esquerda largura-1_1" style="margin-top: 20px;margin-left: 90px;">
     <h1>Questão 3</h1>
-    <p><strong>O gráfico abaixo foi elaborado e publicado pelo Infopen no intuito de divulgar o panorama das ISTs entre as pessoas
-    privadas de liberdade no ano de 2019. Considerando os dados apresentados, você consegue identificar qual IST apresentou
-    o maior número de casos, em dezembro de 2019?</strong>
+    <p style="width: 734px;"><strong>O gráfico abaixo foi elaborado e publicado pelo Infopen no intuito de
+            divulgar o
+            panorama das ISTs entre as
+            pessoas
+            privadas de liberdade no ano de 2019. Considerando os dados apresentados, você consegue identificar
+            qual IST
+            apresentou
+            o maior número de casos, em dezembro de 2019?</strong>
     </p>
-    <p class="questao" id="opc_e">a) Hepatites virais.</p>
-    <p class="questao" id="opc_e">b) HIV.</p>
-    <p class="questao" id="opc_c">c) Sífilis.</p>
-    <p class="questao" id="opc_e">d) Gonorreia.</p>
-    <p class="questao" id="opc_e">e) Tuberculose.</p>
-    <div class="submeter">Submeter</div>
-
-    <div style="margin-top: -200px; width: 500px; height: 180px;" class="feed" id="feedCerto">
+</div>
+<div style="width: 850px;margin-top: 70px;margin-right: 170px;display: flex;">
+    <img class="animate__animated animate__flipInX" style="width: 509px;margin-top: 0px;margin-left: 35px;"
+        src="recursos/imgs/SI_45.png">
+    <div style=" margin-left: 80px; margin-top: 20px;">
+        <p class="questao marcado" id="opc_e">a) Hepatites virais.</p>
+        <p class="questao" id="opc_e">b) HIV.</p>
+        <p class="questao" id="opc_c">c) Sífilis.</p>
+        <p class="questao" id="opc_e">d) Gonorreia.</p>
+        <p class="questao" id="opc_e">e) Tuberculose.</p>
+    </div>
+    <div class="submeter" style="display: none;">Submeter</div>
+    <div style="margin-top: 20px; margin-left: 200px; width: 500px; height: 180px;" class="feed" id="feedCerto">
         <img style="height: 70px; margin-top: -48px; margin-left: 30px;margin-bottom: 15px;"
             src="recursos/imgs/SI_CE.png">
         <h2 style="margin-left: 30px; color: #fac900;">Resposta correta</h2>
-        <p style="margin-left: 30px; width: 450px; color: white;">Excelente! A IST com o maior número de casos foi a infecção pelo HIV. Apesar de ser o agravo com o maior número de
-        casos, a TB não é uma IST. Sendo assim, é possível concluir que o HIV foi o agravo que no período em questão teve o
-        maior número de casos registrados.</p>
+        <p style="margin-left: 30px; width: 450px; color: white;">Excelente! A IST com o maior número de casos
+            foi a infecção pelo HIV. Apesar de ser o agravo com o maior número de
+            casos, a TB não é uma IST. Sendo assim, é possível concluir que o HIV foi o agravo que no período em
+            questão teve o
+            maior número de casos registrados.</p>
     </div>
-    <div style="margin-top: -280px; width: 500px; height: 180px;" class="feed" id="feedErrado">
+    <div style="margin-top: 50px; margin-left: 200px; width: 500px; height: 180px;" class="feed" id="feedErrado">
         <img style="height: 70px; margin-top: -48px; margin-left: 30px;margin-bottom: 15px;"
             src="recursos/imgs/SI_CE.png">
         <h2 style="margin-left: 30px; color: #fac900;">Resposta incorreta</h2>
-        <p style="margin-left: 30px; width: 450px; color: white;">Na verdade, a IST com o maior número de casos foi a infecção pelo HIV. Apesar de ser o agravo com o maior número de
-        casos, a TB não é uma IST. Sendo assim, é possível concluir que o HIV foi o agravo que no período em questão teve o
-        maior número de casos registrados.</p>
+        <p style="margin-left: 30px; width: 450px; color: white;">Na verdade, a IST com o maior número de casos
+            foi a infecção pelo HIV. Apesar de ser o agravo com o maior número de
+            casos, a TB não é uma IST. Sendo assim, é possível concluir que o HIV foi o agravo que no período em
+            questão teve o
+            maior número de casos registrados.</p>
     </div>
 </div>
 <footer style="height: 39.05px; width: 100%; background-color: #004c72;">
