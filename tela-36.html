@@ -12,13 +12,34 @@
         <p>Observe no gráfico abaixo uma comparação entre o número de pessoas privadas de liberdade diagnosticadas
             com agravos
             transmissíveis nos anos de 2018, 2019 e 2020 com base nos dados do Sisdepen.</p>
-        <p>Clique no gráfico para ampliá-lo.</p>
-        <img src="recursos/imgs/SI_36.png" style="width: 480px;margin-left: 160px;">
+        <p><strong style="color: #004c72;;">Clique</strong> no gráfico para ampliá-lo.</p>
+        <img id="botao_1" src="recursos/gif/SI_36.gif" style="width: 480px;margin-left: 160px; cursor: pointer;">
         <p style="color: #004c72;margin-left: 190px;">Fonte: Sisdepen, 2020.</p>
     </div>
+</div>
+<div id="janela_1"
+    style="position: absolute; width: 859px; height: 360px; background-color: white; flex-wrap: nowrap; margin-left: 14px; margin-top: 4px; cursor: pointer;">
+    <img src="recursos/gif/SI_36.gif" style="width: 700px;margin-left: 100px;margin-top: 20px;">
 </div>
 <footer style="height: 39.05px; width: 100%; background-color: #004c72;">
     <img style="height: 29px;margin: 6.5px 37.05px;" src="recursos/imgs/SI_F1.png">
     <img style="height: 27px;margin: 8.5px 37.05px;position: absolute;right: 0px;" src="recursos/imgs/SI_F2.png">
 </footer>
-</div>
+
+<script>
+    $(() => {
+        let janelas = $(document).find('[id^=janela]').css('cursor', 'pointer').on("click", apagarJanelas);
+        apagarJanelas();
+        let botoes = $(document).find('[id^=botao]').map((index, botao) => {
+            $(botao).click(() => {
+                apagarJanelas();
+                $(janelas[index]).fadeIn();
+            })
+        })
+        function apagarJanelas() {
+            janelas.map((index, janela) => {
+                $(janela).hide();
+            })
+        }
+    })
+</script>
