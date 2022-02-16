@@ -7,16 +7,39 @@
     </div>
 </div>
 <div class="coluna-esquerda largura-1_1">
-    <div style="margin-top: 90px;margin-left: 130px;width: 680px;">
-        <p>Os dados do gráfico demonstram a necessidade de implementar ações para a prevenção de ISTs nas unidades
-            prisionais. Uma
-            das maneiras de se realizar um controle das ISTs é a testagem periódica de pessoas privadas de liberdade
-            (PPL).</p>
-        <img src="recursos/imgs/SI_37.png" style="width: 770px;margin-top: 20px;margin-left: -70px;">
-        <p style="color: #004c72;margin-left: -70px;">Fonte: Sisdepen, 2020.</p>
+    <div style="margin-top: 0px;margin-left: 50px;width: 790px;">
+        <h1>Como as ISTs, o HIV/AIDS e as hepatites virais afetam a rotina da unidade prisional?</h1>
+        <p>Observe no gráfico abaixo uma comparação entre o número de pessoas privadas de liberdade diagnosticadas
+            com agravos
+            transmissíveis nos anos de 2018, 2019 e 2020 com base nos dados do Sisdepen.</p>
+        <p><strong style="color: #004c72;;">Clique</strong> no gráfico para ampliá-lo.</p>
+        <img id="botao_1" src="recursos/gif/SI_36.gif" style="width: 480px;margin-left: 160px; cursor: pointer;">
+        <p style="color: #004c72;margin-left: 190px;">Fonte: Sisdepen, 2020.</p>
     </div>
+</div>
+<div id="janela_1"
+    style="position: absolute; width: 859px; height: 360px; background-color: white; flex-wrap: nowrap; margin-left: 14px; margin-top: 4px; cursor: pointer;">
+    <img src="recursos/gif/SI_36.gif" style="width: 700px;margin-left: 100px;margin-top: 20px;">
 </div>
 <footer style="height: 39.05px; width: 100%; background-color: #004c72;">
     <img style="height: 29px;margin: 6.5px 37.05px;" src="recursos/imgs/SI_F1.png">
     <img style="height: 27px;margin: 8.5px 37.05px;position: absolute;right: 0px;" src="recursos/imgs/SI_F2.png">
 </footer>
+
+<script>
+    $(() => {
+        let janelas = $(document).find('[id^=janela]').css('cursor', 'pointer').on("click", apagarJanelas);
+        apagarJanelas();
+        let botoes = $(document).find('[id^=botao]').map((index, botao) => {
+            $(botao).click(() => {
+                apagarJanelas();
+                $(janelas[index]).fadeIn();
+            })
+        })
+        function apagarJanelas() {
+            janelas.map((index, janela) => {
+                $(janela).hide();
+            })
+        }
+    })
+</script>
