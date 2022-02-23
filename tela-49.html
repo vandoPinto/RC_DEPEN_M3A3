@@ -1,166 +1,147 @@
 <style>
-    p {
-        color: #004D73;
-        font-size: 9px;
-        color: #fac900;
+    li {
+        margin-bottom: 12px;
+        margin-left: 18px;
+    }
+
+    .questao:hover {
+        background-color: #004c72;
+        cursor: pointer;
+    }
+
+    .marcado {
+        background-color: #004c72;
+    }
+
+    .submeter {
+        margin: 1em auto;
+        font-weight: bold;
+        color: #ffffff;
+        border-radius: 3px;
+        background-color: #004c72;
+        border: solid 0 transparent;
+        outline: none;
+        box-shadow: 0 0.1em rgb(0 0 0 / 50%);
+        padding: 0.5em;
+        display: block;
+        width: 180px;
+        height: 17px;
+        cursor: pointer;
+        text-align: center;
+        position: absolute;
+        margin-top: 190px;
+        margin-left: 610px;
+    }
+
+    .feed {
+        position: absolute;
+        width: 270px;
+        height: 125px;
+        background-color: #004c72;
+        border-radius: 10px;
+        flex-wrap: nowrap;
+        cursor: pointer;
     }
 </style>
-<div class="coluna-esquerda altura-1_1 largura-1_2" style="background-color: #004c72; width: 450px;">
-    <div>
-        <img src="recursos/imgs/FT_01.png" style="width: 150px;margin-left: 30px;margin-top: 40px;margin-right: 190px;">
+<div style="height: 72px; width: 100%; background-color: #004c72; ">
+    <div style="background-color: white; width: 17px; height: 66px; margin-left: 19px; display: flex;" /> <img
+        style="height: 43.5px; width:180px; margin-top: 12.8px; margin-left: 68.45px;" src="recursos/imgs/SI_H1.png">
+    <img style="height: 73px; margin-left:170.85px;" src="recursos/imgs/SI_H2.png"> <img
+        style="height: 46.8px; width:56.75px;  position: absolute; right: 1px;" src="recursos/imgs/SI_H3.png">
+</div>
+<div class="coluna-esquerda largura-1_1" style="margin-top: 20px;margin-left: 90px;">
+    <h1>Questão 3</h1>
+    <p style="width: 734px;"><strong>O gráfico abaixo foi elaborado e publicado pelo Infopen no intuito de
+            divulgar o
+            panorama das ISTs entre as
+            pessoas
+            privadas de liberdade no ano de 2019. Considerando os dados apresentados, você consegue identificar
+            qual IST
+            apresentou
+            o maior número de casos, em dezembro de 2019?</strong>
+    </p>
+</div>
+<div style="width: 850px;margin-top: 70px;margin-right: 170px;display: flex;">
+    <img class="animate__animated animate__flipInX" style="width: 509px;margin-top: 0px;margin-left: 35px;"
+        src="recursos/gif/SI_45.gif">
+    <div style=" margin-left: 80px; margin-top: 20px;">
+        <p class="questao" id="opc_e">a) Hepatites virais.</p>
+        <p class="questao" id="opc_c">b) HIV.</p>
+        <p class="questao" id="opc_e">c) Sífilis.</p>
+        <p class="questao" id="opc_e">d) Gonorreia.</p>
+        <p class="questao" id="opc_e">e) Tuberculose.</p>
     </div>
-    <div style="margin-left: 30px; width: 400px;">
-        <p><strong>© 2021. MINISTÉRIO DA JUSTIÇA E SEGURANÇA PÚBLICA. MINISTÉRIO DA SAÚDE.
-                FUNDAÇÃO OSWALDO CRUZ. ESCOLA DE GOVERNO FIOCRUZ.</strong></p>
-
-        <p>ALGUNS DIREITOS RESERVADOS. É PERMITIDA A REPRODUÇÃO, DISSEMINAÇÃO E UTILIZAÇÃO DESSA OBRA. DEVE SER CITADA A
-            FONTE E É
-            VEDADA A UTILIZAÇÃO COMERCIAL.</p>
-
-        <p>CURSO DE SAÚDE PRISIONAL: PRINCIPAIS DOENÇAS E AGRAVOS. COORDENAÇÃO-GERAL DE ANDRÉ VINICIUS PIRES GUERRERO.
-            BRASÍLIA:
-            [CURSO NA MODALIDADE A DISTÂNCIA]. ESCOLA DE GOVERNO FIOCRUZ BRASÍLIA, 2021.</p>
+    <div class="submeter" style="display: none;">Submeter</div>
+    <div style="margin-top: 20px; margin-left: 200px; width: 500px; height: 180px;" class="feed" id="feedCerto">
+        <img style="height: 70px; margin-top: -48px; margin-left: 30px;margin-bottom: 15px;"
+            src="recursos/imgs/SI_CE.png">
+        <h2 style="margin-left: 30px; color: #fac900;">Resposta correta</h2>
+        <p style="margin-left: 30px; width: 450px; color: white;">Excelente! A IST com o maior número de casos
+            foi a infecção pelo HIV. Apesar de ser o agravo com o maior número de
+            casos, a TB não é uma IST. Sendo assim, é possível concluir que o HIV foi o agravo que no período em
+            questão teve o
+            maior número de casos registrados.</p>
     </div>
-    <p>
-    <div style="margin-left: 30px; width: 430px; display: flex;">
-        <div>
-            <p><strong>MINISTÉRIO DA JUSTIÇA E SEGURANÇA PÚBLICA</strong></p>
-
-            <p style=" font-size: 8px;"><strong>DEPARTAMENTO PENITENCIÁRIO NACIONAL</strong><br>TÂNIA MARIA MATOS
-                FERREIRA FOGAÇA<br>
-                DIRETORA-GERAL
-            </p>
-            <p style=" font-size: 8px;"><strong>DIRETORIA DE POLÍTICAS PENITENCIÁRIAS</strong><br>SANDRO ABEL SOUSA
-                BARRADAS<br>
-                DIRETOR
-            </p>
-            <p style=" font-size: 8px;"><strong>COORDENAÇÃO-GERAL DE CIDADANIA E ALTERNATIVAS
-                    PENAIS</strong><br>CRISTIANO TAVARES TORQUATO<br>
-                COORDENADOR-GERAL
-            </p>
-            <p style=" font-size: 8px;"><strong>COORDENAÇÃO DE SAÚDE</strong><br>RODRIGO PEREIRA LOPES<br>
-                COORDENADOR
-            </p>
-            <p style=" font-size: 8px;"><strong>FUNDAÇÃO OSWALDO CRUZ</strong><br>NÍSIA TRINDADE LIMA<br>
-                PRESIDENTE
-            </p>
-            <p style=" font-size: 8px;"><strong>FIOCRUZ BRASÍLIA – GEREB</strong><br>MARIA FABIANA DAMÁSIO PASSOS<br>
-                DIRETORA
-            </p>
-        </div>
-        <div style="background-color: #004D73; width: 2px; height: 250px; margin: 5px;"></div>
-        <div style="margin-left: 15px; width: 315px;">
-            <p style=" font-size: 8px;"><strong>ESCOLA DE GOVERNO FIOCRUZ BRASÍLIA (EGF)</strong><br>LUCIANA SEPÚLVEDA
-                KÖPTCHE<br>
-                DIRETORA EXECUTIVA
-            </p>
-            <p style=" font-size: 8px;"><strong>NÚCLEO DE SAÚDE MENTAL, ÁLCOOL E OUTRAS<br>DROGAS/ FIOCRUZ<br></strong>
-                ANDRÉ VINICIUS PIRES GUERRERO
-                <br>
-                COORDENADOR
-            </p>
-            <br>
-            <p><strong>PARCEIROS</strong></p>
-            <p style=" font-size: 8px;"><strong>ESCOLA DE GOVERNO FIOCRUZ BRASÍLIA</strong>
-                <br>AVENIDA L3 NORTE,
-                S/N<br>
-                CAMPUS UNIVERSITÁRIO DARCY RIBEIRO, GLEBA A<br>
-                CEP: 70.904-130 – BRASÍLIA/DF<br>
-                TELEFONE: (61) 3329-4550
-            </p>
-            <p><strong>CRÉDITOS</strong></p>
-            <p style=" font-size: 8px;">COORDENAÇÃO-GERAL DO CURSO<br>ANDRÉ VINICIUS PIRES
-                GUERRERO<br>
-                LETÍCIA MARANHÃO MATOS
-            </p>
-            <p style=" font-size: 8px;"><strong>ORGANIZAÇÃO</strong></p>
-            <p style=" font-size: 8px;">COORDENAÇÃO DE SAÚDE/DEPEN<br>NÚCLEO DE SAÚDE MENTAL,
-                ÁLCOOL E
-                OUTRAS<br>
-                DROGAS/FIOCRUZ
-            </p>
-        </div>
+    <div style="margin-top: 50px; margin-left: 200px; width: 500px; height: 180px;" class="feed" id="feedErrado">
+        <img style="height: 70px; margin-top: -48px; margin-left: 30px;margin-bottom: 15px;"
+            src="recursos/imgs/SI_CE.png">
+        <h2 style="margin-left: 30px; color: #fac900;">Resposta incorreta</h2>
+        <p style="margin-left: 30px; width: 450px; color: white;">Na verdade, a IST com o maior número de casos
+            foi a infecção pelo HIV. Apesar de ser o agravo com o maior número de
+            casos, a TB não é uma IST. Sendo assim, é possível concluir que o HIV foi o agravo que no período em
+            questão teve o
+            maior número de casos registrados.</p>
     </div>
 </div>
-<div class="coluna-direita altura-1_1 largura-1_2 " style="background-color: #004c72; width: 100%;">
-    <div style="margin-top: 70px; width: 430px; display: flex;">
-        <div>
-            <p style=" font-size: 8px;"><strong>REVISÃO TÉCNICA</strong><br>
-                GRAZIELLA BARBOSA BARREIROS<br>
-                JÉSSICA RODRIGUES<br>
-                JAIRO CEZAR DE CARVALHO JUNIOR<br>
-                JUNE CORRÊA BORGES SCAFUTO<br>
-                LAURA DÍAZ RAMIREZ OMOTOSHO<br>
-                RICARDO GADELHA DE ABREU<br>
-                SÉRGIO DE ANDRADE NISHIOKA<br>
-            </p>
-            <p style=" font-size: 8px;"><strong>REVISÃO TÉCNICO-CIENTÍFICA</strong><br>
-                DECIANE MAFRA FIGUEIREDO<br>
-                RAQUEL LIMA DE OLIVEIRA E SILVA
-            </p>
-            <p style=" font-size: 8px;"><strong>REVISÃO E ACOMPANHAMENTO<br>
-                    TÉCNICO-PEDAGÓGICO</strong><br>
-                LUCIANO PEREIRA DOS SANTOS
-            </p>
-            <p style=" font-size: 8px;"><strong>ELABORAÇÃO DE CONTEÚDO</strong><br>
-                ANA MÔNICA DE MELLO<br>
-                JULIANA GARCIA PERES MURAD<br>
-                PAULA FRASSINETI GUIMARÃES DE SÁ<br>
-                RAFAELA BRAGA PEREIRA VELOSO<br>
-                SARAH EVANGELISTA DE OLIVEIRA E SILVA<br>
-                STEPHANE SILVA DE ARAUJO
-            </p>
-            <div style="display: inline-flex;">
-                <div style="background-color: #004D73; width: 15px; height: 1px; margin: 5px;"></div>
-                <div style="background-color: #004D73; width: 15px; height: 1px; margin: 5px;"></div>
-            </div>
-            <p style=" font-size: 9px;"><strong>PRODUÇÃO NÚCLEO DE EDUCAÇÃO A<br>
-                    DISTÂNCIA DA EGF – FIOCRUZ BRASÍLIA</strong><br>
-            </p>
-            <p style=" font-size: 8px;"><strong>COORDENAÇÃO</strong><br>
-                MARIA REZENDE
-            </p>
-        </div>
-        <div style="background-color: #004D73;width: 1px;height: 323px;margin-left: 20px;margin-right: 10px;"></div>
-        <div>
-            <p style=" font-size: 8px;"><strong>COORDENAÇÃO DE PRODUÇÃO</strong><br>
-                ERICK GUILHON
-            </p>
-            <p style=" font-size: 8px;"><strong>DESIGN EDUCACIONAL</strong><br>
-                ERICK GUILHON<br>
-                SARAH RESENDE
-            </p>
-            <p style=" font-size: 8px;"><strong>DESIGN GRÁFICO</strong><br>
-                EDUARDO CALAZANS<br>
-                DANIEL MOTTA
-            </p>
-            <p style=" font-size: 8px;"><strong>REVISÃO TEXTUAL</strong><br>
-                ERICK GUILHON
-            </p>
-            <p style=" font-size: 8px;"><strong>PRODUÇÃO AUDIOVISUAL</strong><br>
-                LARISSE PADUA
-            </p>
-            <p style=" font-size: 8px;"><strong>NARRAÇÃO</strong><br>
-                MÁRLON LIMA
-            </p>
-            <p style=" font-size: 8px;"><strong>DESENVOLVIMENTO</strong><br>
-                BRUNO COSTA<br>
-                RAFAEL COTRIM HENRIQUES<br>
-                TREVOR FURTADO<br>
-                THIAGO XAVIER<br>
-                VANDO PINTO
-            </p>
-            <p style=" font-size: 8px;"><strong>SUPERVISÃO DE OFERTA</strong><br>
-                MEIRIRENE MOSLAVES
-            </p>
-            <p style=" font-size: 8px;"><strong>SUPORTE TÉCNICO</strong><br>
-                DIONETE SABATE
-            </p>
-        </div>
-    </div>
-    <img src="recursos/imgs/FT_02.png"
-        style="height: 235px;margin-left: 30px;top: 130px;right: 0px;position: absolute;">
-    <img src="recursos/imgs/FT_03.png" style="width: 410px;">
-    <img src="recursos/imgs/FT_04.png" style="width: 50px; bottom: 0px;left: 0px;position: absolute;">
-    <div style="background-color: white; width: 25px; height: 25px; position: absolute; right:0px; top: 0px;"></div>
-</div>
+<footer style="height: 39.05px; width: 100%; background-color: #004c72;">
+    <img style="height: 29px;margin: 6.5px 37.05px;" src="recursos/imgs/SI_F1.png">
+    <img style="height: 27px;margin: 8.5px 37.05px;position: absolute;right: 0px;" src="recursos/imgs/SI_F2.png">
+</footer>
+
+<script>
+    $(() => {
+        let resposta = '';
+        let mostrarSub = true;
+        let feedCerto = $(document).find('[id^=feedCerto]').hide();
+        let feedErrado = $(document).find('[id^=feedErrado]').hide();
+        let submeter = $(document).find('[class=submeter]').hide();
+
+        $(feedCerto).on('click', apagarFeeds);
+        $(feedErrado).on('click', apagarFeeds);
+
+        function apagarFeeds() {
+            feedCerto.fadeOut();
+            feedErrado.fadeOut();
+        }
+
+        function desmarcarTudo() {
+            let questao = $(document).find('[id^=opc]').map((index, sel) => {
+                $(sel).removeClass("marcado");
+            })
+        }
+
+        let questao = $(document).find('[id^=opc]').map((index, sel) => {
+            $(sel).click(() => {
+                console.log(sel.id);
+                resposta = sel.id;
+                if (mostrarSub) {
+                    submeter.fadeIn();
+                }
+                desmarcarTudo();
+                $(sel).addClass("marcado");
+            })
+        })
+
+        $(submeter).on('click', () => {
+            console.log("clicou " + resposta.split("_")[1]);
+            if (resposta.split("_")[1] == "c") {
+                $(feedCerto).fadeIn();
+                pontos += 1;
+                mostrarSub = false;
+                submeter.hide();
+            } else {
+                $(feedErrado).fadeIn();
+            }
+        })
+    })
+</script>

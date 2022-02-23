@@ -1,31 +1,86 @@
 <div style="height: 72px; width: 100%; background-color: #004c72; ">
-    <div style="background-color: white; width: 17px; height: 66px; margin-left: 19px; display: flex;">
-        <img style="height: 43.5px; width:180px; margin-top: 12.8px; margin-left: 68.45px;"
-            src="recursos/imgs/SI_H1.png">
-        <img style="height: 73px; margin-left:170.85px;" src="recursos/imgs/SI_H2.png">
-        <img style="height: 46.8px; width:56.75px;  position: absolute; right: 1px;" src="recursos/imgs/SI_H3.png">
+    <div style="background-color: white; width: 17px; height: 66px; margin-left: 19px; display: flex;" /><img
+        style="height: 43.5px; width:180px; margin-top: 12.8px; margin-left: 68.45px;"
+        src="recursos/imgs/SI_H1.png"><img style="height: 73.05px; width:108.45px; margin-left:170.85px;"
+        src="recursos/imgs/SI_H2.png"><img style="height: 46.8px; width:56.75px;  position: absolute; right: 1px;"
+        src="recursos/imgs/SI_H3.png">
+</div>
+<div class="coluna-esquerda largura-1_1" style="margin-top: 20px;margin-left: 100px;">
+    <div style="width: 730px;">
+        <h1>Manifestações clínicas, diagnóstico, tratamento e prevenção</h1>
+        <p>A infecção pelo HIV envolve três fases, com durações variáveis, que dependem da resposta imunológica
+            do
+            indivíduo e da
+            carga viral. Em cada uma delas, é possível identificar as principais manifestações que a
+            caracterizam.</p>
     </div>
-</div>
-<div class=" coluna-esquerda largura-1_3">
-    <div style="margin: 145px 37px;width: 248px;">
-        <p style="text-align: left">O diagnóstico do HIV é realizado por meio de técnicas que pesquisam anticorpos
-            (testes sorológicos) e material genético
-            do vírus (biologia molecular), sendo os primeiros mais utilizados.
-        </p>
+    <p><strong style="color: #004c72;">Clique</strong> nos números para
+        conhecer essas fases.</p>
+    <div
+        style="width: 630px; margin-left: 40px; margin-top: 30px; display: flex; flex-direction: row; justify-content: space-between;">
+        <img src="recursos/imgs/SI_28a.png" style="width: 70px;cursor: pointer;"
+            class="btn animate__animated animate__backInRight" id="botao_1">
+        <img src="recursos/imgs/SI_28b.png" style="width: 70px;height: 70px;cursor: pointer;"
+            class="btn animate__animated animate__backInLeft" id="botao_2">
+        <img src="recursos/imgs/SI_28c.png" style="width: 70px;cursor: pointer;"
+            class="btn animate__animated animate__backInRight" id="botao_3">
     </div>
-</div>
-<div class="coluna-esquerda largura-1_2 animate__animated animate__backInDown">
-    <img src="recursos/imgs/SI_29.png" style="height: 380px;margin-left: 25px;">
-</div>
-<div class="coluna-direita largura-1_3">
-    <div style="margin-top: 145px;margin-right: 37px;width: 245px;">
-        <p>No Brasil, o Ministério da Saúde disponibiliza os exames laboratoriais e os testes rápidos, que detectam
-            os anticorpos
-            contra o HIV em cerca de 30 minutos. Esses testes são realizados gratuitamente pelo Sistema Único de
-            Saúde (SUS).</p>
+    <div>
+        <div id="janela_1"
+            style="position: absolute; width: 270px; height: 150px; background-color: rgba(0, 77, 115, 0.9); flex-wrap: nowrap; margin-left: -55px; margin-top: -19px; cursor: pointer; display: none;">
+            <p style="padding: 20px;padding-top: 30px;color: white;text-align: center;">
+                <strong>Infecção aguda (primeira fase):</strong>
+                marcada pela presença de sinais e sintomas inespecíficos (tosse, febre, diarreia, coriza,
+                manchas na
+                pele, etc.), que
+                ocorrem entre a primeira e a terceira semanas após a infecção.
+            </p>
+        </div>
+        <div id="janela_2"
+            style="width: 260px; height: 150px; background-color: rgba(0, 77, 115, 0.9); flex-wrap: nowrap; margin-left: 216px; margin-top: -31px; cursor: pointer; display: none;">
+            <p
+                style="padding: 20px;padding-top: 30px;text-align: center;padding-left: 20px;color: white;">
+                <strong>Fase de latência (assintomática):</strong>
+                caracterizada pela ausência de manifestações clínicas. É quando ocorrem a replicação do vírus e
+                a
+                destruição das células
+                de defesa. Pode durar anos até o aparecimento de infecções oportunistas.
+            </p>
+        </div>
+        <div id="janela_3"
+            style="width: 260px; height: 150px; background-color: rgba(0, 77, 115, 0.9); flex-wrap: nowrap; margin-left: 506px; margin-top: -29px; cursor: pointer;">
+            <p
+                style="padding: 20px;padding-top: 30px;text-align: center;padding-left: 20px;padding-right: 20px;color: white;">
+                <strong>AIDS:</strong> marcada pela perda de peso e presença de doenças oportunistas, tais como
+                tuberculose,
+                pneumonia,
+                infecções
+                fúngicas graves, alguns tumores, entre outras. Essas doenças acontecem, pois as células de
+                defesa se
+                encontram em níveis
+                críticos. A presença desses eventos define a AIDS.
+            </p>
+        </div>
     </div>
 </div>
 <footer style="height: 39.05px; width: 100%; background-color: #004c72;">
     <img style="height: 29px;margin: 6.5px 37.05px;" src="recursos/imgs/SI_F1.png">
     <img style="height: 27px;margin: 8.5px 37.05px;position: absolute;right: 0px;" src="recursos/imgs/SI_F2.png">
 </footer>
+<script>
+    $(() => {
+        let janelas = $(document).find('[id^=janela]').css('cursor', 'pointer').on("click", apagarJanelas);
+        apagarJanelas();
+        let botoes = $(document).find('[id^=botao]').map((index, botao) => {
+            $(botao).click(() => {
+                apagarJanelas();
+                $(janelas[index]).fadeIn();
+            })
+        })
+        function apagarJanelas() {
+            janelas.map((index, janela) => {
+                $(janela).hide();
+            })
+        }
+    })
+</script>
