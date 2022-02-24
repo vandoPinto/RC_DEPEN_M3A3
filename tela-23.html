@@ -262,6 +262,7 @@
         function apagarJanelas() {
             janelas.map((index, janela) => {
                 $(janela).hide();
+                $(janela).css('user-select', 'none');
             })
         }
     })
