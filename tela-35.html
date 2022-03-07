@@ -32,55 +32,57 @@
 
 
 <div>
-    <div id="drop_1"
+    <div id="drop_1_1"
         style="position: absolute;top: 200px;left: 42px;background-color: gray;width: 90px;height: 90px;opacity: .5;">
     </div>
-    <div id="drop_5"
+    <div id="drop_5_1"
         style="position: absolute;top: 200px;left: 140px;opacity: .5;background-color: gray;width: 90px;height: 90px;">
     </div>
-    <div id="drop_7"
+    <div id="drop_7_1"
         style="position: absolute;top: 200px;left: 235px;opacity: .5;background-color: gray;width: 90px;height: 90px;">
     </div>
-    <div id="drop_4"
+    <div id="drop_4_1"
         style="position: absolute;top: 200px;left: 330px;opacity: .5;background-color: gray;width: 90px;height: 90px;">
     </div>
-    <div id="drop_2"
+    <div id="drop_2_2"
         style="position: absolute;top: 200px;left: 470px;opacity: .5;background-color: gray;width: 90px;height: 90px;">
     </div>
-    <div id="drop_6"
+    <div id="drop_6_2"
         style="position: absolute;top: 200px;left: 565px;opacity: .5;background-color: gray;width: 90px;height: 90px;">
     </div>
-    <div id="drop_3"
+    <div id="drop_3_2"
         style="position: absolute;top: 200px;left: 660px;opacity: .5;background-color: gray;width: 90px;height: 90px;">
     </div>
-    <div id="drop_8"
+    <div id="drop_8_2"
         style="position: absolute;top: 200px;left: 756px;opacity: .5;background-color: gray;width: 90px;height: 90px;">
     </div>
 </div>
 
 <div>
-    <div id="drag_1" style="position: absolute;left: 60px;top: 315px;">
+    <div id="drag_1_1" style="position: absolute;left: 60px;top: 315px;">
         <img src="recursos/imgs/SI_39a.png" style="width: 90px;">
     </div>
-    <div id="drag_2" draggable="true" style="position: absolute;left: 160px;top: 315px;">
+    <div id="drag_2_2" draggable="true" style="position: absolute;left: 160px;top: 315px;">
         <img src="recursos/imgs/SI_39b.png" style="width: 90px;">
     </div>
-    <div id="drag_3" draggable="true" style="position: absolute;left: 260px;top: 315px;">
+    <div id="drag_3_2" draggable="true" style="position: absolute;left: 260px;top: 315px;">
         <img src="recursos/imgs/SI_39c.png" style="width: 90px;">
     </div>
-    <div id="drag_4" draggable="true" style="position: absolute;left: 360px;top: 315px;">
+    <div id="drag_4_1" draggable="true" style="position: absolute;left: 360px;top: 315px;">
         <img src="recursos/imgs/SI_39d.png" style="width: 90px;">
     </div>
-    <div id="drag_5" draggable="true" style="position: absolute;left: 460px;top: 315px;">
+
+
+    <div id="drag_5_1" draggable="true" style="position: absolute;left: 460px;top: 315px;">
         <img src="recursos/imgs/SI_39e.png" style="width: 90px;">
     </div>
-    <div id="drag_6" draggable="true" style="position: absolute;left: 558px;top: 315px;">
+    <div id="drag_6_2" draggable="true" style="position: absolute;left: 558px;top: 315px;">
         <img src="recursos/imgs/SI_39f.png" style="width: 90px;">
     </div>
-    <div id="drag_7" draggable="true" style="position: absolute;left: 656px;top: 315px;">
+    <div id="drag_7_1" draggable="true" style="position: absolute;left: 656px;top: 315px;">
         <img src="recursos/imgs/SI_39g.png" style="width: 90px;">
     </div>
-    <div id="drag_8" draggable="true" style="position: absolute;left: 753px;top: 315px;">
+    <div id="drag_8_2" draggable="true" style="position: absolute;left: 753px;top: 315px;">
         <img src="recursos/imgs/SI_39h.png" style="width: 90px;">
     </div>
 </div>
@@ -161,7 +163,7 @@
             if (this.id.indexOf('drop') == 0) {
                 $(sub).fadeIn();
                 $("#" + drag.id).animate({ top: $(this)[0].offsetTop, left: $(this)[0].offsetLeft }, 1);
-                if (drag.id.split('_')[1] == this.id.split('_')[1]) {
+                if (drag.id.split('_')[2] == this.id.split('_')[2]) {
                     //$(janelas[(this.id.split('_')[1] - 1)]).fadeIn();
                     voltar.map((objeto, index) => {
                         if (objeto == drag.id) {
